@@ -32,6 +32,7 @@ public class ProjectileScript : MonoBehaviour {
             if (transform.position == target.transform.position){
                 if (target.GetComponent<EnemyHealthScript>().health > 0)
                 {
+					gameObject.GetComponent<AudioSource> ().Play();
                     target.GetComponent<EnemyHealthScript>().TakeDamage(myTower.GetComponent<TowerShootsScript>().damage);
                     target.GetComponent<EnemyNavScript>().SlowMeDown(myTower.GetComponent<TowerShootsScript>().slowEnemyBy, myTower.GetComponent<TowerShootsScript>().slowEnemyFor);
                 }

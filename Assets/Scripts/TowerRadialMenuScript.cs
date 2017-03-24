@@ -8,6 +8,11 @@ public class TowerRadialMenuScript : MonoBehaviour {
     private GameObject activeTower; //this is where we will temporarily store the active tower. it needs to be updated every frame, to make sure we do stuff to the right tower.
     private GameDataScript gameData; //this is where we will store a reference to our game data script
 
+	public AudioSource artStudent;
+	public AudioSource audioStudent;
+	public AudioSource gymStudent;
+	public AudioSource computerStudent;
+
     public TowerRadialMenuScript levelUpRadialMenu;
     private TowerRadialMenuScript targetingRadialMenu;
 
@@ -121,21 +126,25 @@ public class TowerRadialMenuScript : MonoBehaviour {
     }
 
     public void AOEButtonClicked() {
+		audioStudent.Play ();
         UpgradeTo(aoeTower);
     }
 
     public void SniperButtonClicked()
     {
+		computerStudent.Play ();
         UpgradeTo(sniperTower);
     }
 
     public void SlowingButtonClicked()
     {
+		artStudent.Play ();
         UpgradeTo(slowTower);
     }
 
     public void BuffingButtonClicked()
     {
+		gymStudent.Play ();
         UpgradeTo(buffTower);
     }
 
