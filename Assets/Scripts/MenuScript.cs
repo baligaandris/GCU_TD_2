@@ -7,20 +7,6 @@ public class MenuScript : MonoBehaviour {
 
 public GameObject narrativeCanvas;
 
-
-	IEnumerator DelayLoadMainLevel (){
-		GetComponent<AudioSource> ().Play ();
-		narrativeCanvas.gameObject.SetActive (true);
-		yield return new WaitForSeconds (12);
-		Application.LoadLevel ("InterimScene");
-	}
-
-	IEnumerator LoadMainLevelAgain (){
-		GetComponent<AudioSource> ().Play ();
-		yield return new WaitForSeconds (GetComponent<AudioSource> ().clip.length);
-		Application.LoadLevel ("InterimScene");
-	}
-
 	IEnumerator DelayQuitGame(){
 		GetComponent<AudioSource> ().Play ();
 		yield return new WaitForSeconds (GetComponent<AudioSource> ().clip.length);
@@ -32,6 +18,12 @@ public GameObject narrativeCanvas;
 		yield return new WaitForSeconds (GetComponent<AudioSource> ().clip.length);
 		Application.LoadLevel ("MainMenuScene");
 	}
+
+	IEnumerator LoadTutorialLevelye(){
+		GetComponent<AudioSource> ().Play ();
+		yield return new WaitForSeconds (GetComponent<AudioSource> ().clip.length);
+		Application.LoadLevel ("TutorialScene");
+	}
 	// Use this for initialization
 	void Start () {
 		
@@ -42,9 +34,8 @@ public GameObject narrativeCanvas;
 		
 	}
 
-	public void LoadMainLevel(){
-	
-		StartCoroutine (DelayLoadMainLevel ());
+	public void LoadTutorialLevel(){
+		StartCoroutine (LoadTutorialLevelye ());
 	}
 
 	public void QuitGame () {
@@ -57,8 +48,6 @@ public GameObject narrativeCanvas;
 		StartCoroutine (DelayLoadStartMenu ());
 	}
 
-	public void RestartLevel() {
-		StartCoroutine (LoadMainLevelAgain());
-	}
+
 
 }
