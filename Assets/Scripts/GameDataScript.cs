@@ -79,8 +79,8 @@ public class GameDataScript : MonoBehaviour {
     //we will have more things to display, we can keep updating this method, to use it to update all UI elements.
     void UpdateUI() {
         //this just updates all the values in our health and USAC displays
-        healthDisplay.GetComponent<Text>().text = "HP: " + uniHealth;
-        usacDisplay.GetComponent<Text>().text = "USAC: " + usac;
+        healthDisplay.GetComponent<Text>().text = uniHealth.ToString();
+        usacDisplay.GetComponent<Text>().text = usac.ToString();
     }
 
 	public void GameOver (){
