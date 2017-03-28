@@ -22,11 +22,14 @@ public class HealthBarScript : MonoBehaviour {
 
     private void HealthChanged(float currentHealth, float health) //
     {
-       // Debug.Log("The current health is" + currentHealth); Trying to see if it finds that the health is changed.
-       hpTransform.localScale = new Vector3(health / currentHealth, 1f); // setting the currentHealth to the green bar and the red bar to the remaining health of the enemy. If the positions were swapped (health / currentHealth) the green bar would increase after taking damage
-        if(health <= 0)
+        // Debug.Log("The current health is" + currentHealth); Trying to see if it finds that the health is changed.
+        if (hpTransform != null)
         {
-            Destroy(remainingHealth);
+            hpTransform.localScale = new Vector3(health / currentHealth, 1f); // setting the currentHealth to the green bar and the red bar to the remaining health of the enemy. If the positions were swapped (health / currentHealth) the green bar would increase after taking damage
+            if (health <= 0)
+            {
+                Destroy(remainingHealth);
+            }
         }
     }
 

@@ -11,6 +11,7 @@ public class EnemyHealthScript : MonoBehaviour {
     public bool runningAway = false;
     public bool isBoss = false;
     public GameObject EnemyToSpawn;
+    public int howManyToSpawn;
 
     public delegate void HealthChanged(float currentHealth, float health);
     public event HealthChanged OnHealthChanged;
@@ -29,13 +30,18 @@ public class EnemyHealthScript : MonoBehaviour {
             GetComponent<EnemyNavScript>().Runaway();
             currentHealth = 0;
             health = 0;
-           // if(isBoss == true)
-           // {
-          //      Instantiate(EnemyToSpawn, transform.position, Quaternion.identity);
-                //GetComponent<EnemyNavScript>().currentWayPoint += EnemyToSpawn.GetComponent<EnemyNavScript>().currentWayPoint;
-          //  }
+            if (isBoss == true)
+            {
+                for (int i = 0; i < howManyToSpawn; i++)
+                {
+                    GameObject spawnedEnemy = Instantiate(EnemyToSpawn, new Vector3(transform.position.x + Random.Range(-1, 1), 0, transform.position.z + Random.Range(-1, 1)), Quaternion.identity);
+                    spawnedEnemy.GetComponent<EnemyNavScript>().ChangeTargetWaypoint(gameObject.GetComponent<EnemyNavScript>().currentWayPoint);
+                    spawnedEnemy.GetComponent<EnemyNavScript>().ChangeAnimationDirection(gameObject.GetComponent<EnemyNavScript>().direction);
+                }
+                Destroy(gameObject);
+            }
         }
-	}
+    }
 
     //this method is called by the towers to deal damage to the enemy
     public void TakeDamage(float damage) {

@@ -16,6 +16,8 @@ public class EnemyNavScript : MonoBehaviour
     public float distanceToUni = 0;
     private float slowdownTimer = 0;
 
+    public WaypointScript.direction direction = WaypointScript.direction.right;
+
     // When the enemy is spawned, the spawner tells them their first waypoint
     void Start()
     {
@@ -44,25 +46,7 @@ public class EnemyNavScript : MonoBehaviour
             }
             else
             {
-                if (currentWayPoint.GetComponent<WaypointScript>().dir == WaypointScript.direction.down)
-                {
-                    GetComponentInChildren<Animator>().SetTrigger("WaypointDown");
-                }
-                else
-                if (currentWayPoint.GetComponent<WaypointScript>().dir == WaypointScript.direction.up)
-                {
-                    GetComponentInChildren<Animator>().SetTrigger("WaypointUp");
-                }
-                else
-                if (currentWayPoint.GetComponent<WaypointScript>().dir == WaypointScript.direction.left)
-                {
-                    GetComponentInChildren<Animator>().SetTrigger("WaypointLeft");
-                }
-                else
-                if (currentWayPoint.GetComponent<WaypointScript>().dir == WaypointScript.direction.right)
-                {
-                    GetComponentInChildren<Animator>().SetTrigger("WaypointRight");
-                }
+                ChangeAnimationDirection(currentWayPoint.GetComponent<WaypointScript>().dir);
 
                 ChangeTargetWaypoint(currentWayPoint.GetComponent<WaypointScript>().nextWayPoint);
             }
@@ -74,6 +58,8 @@ public class EnemyNavScript : MonoBehaviour
         {
             CalculateDistanceToUni();
         }
+
+        
     }
 
     //this is cript is called when we want to change the target to move towards
@@ -133,5 +119,28 @@ public class EnemyNavScript : MonoBehaviour
             slowdownTimer = slowDuration;
         }
 
+    }
+
+    public void ChangeAnimationDirection(WaypointScript.direction dir) {
+        direction = dir;
+        if (direction == WaypointScript.direction.down)
+        {
+            GetComponentInChildren<Animator>().SetTrigger("WaypointDown");
+        }
+        else
+        if (direction == WaypointScript.direction.up)
+        {
+            GetComponentInChildren<Animator>().SetTrigger("WaypointUp");
+        }
+        else
+        if (direction == WaypointScript.direction.left)
+        {
+            GetComponentInChildren<Animator>().SetTrigger("WaypointLeft");
+        }
+        else
+        if (direction == WaypointScript.direction.right)
+        {
+            GetComponentInChildren<Animator>().SetTrigger("WaypointRight");
+        }
     }
 }

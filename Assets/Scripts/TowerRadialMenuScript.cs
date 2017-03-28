@@ -73,7 +73,10 @@ public class TowerRadialMenuScript : MonoBehaviour {
         }
         //we also move it to sit on top of the active tower
         if (activeTower.GetComponentInChildren<TowerShootsScript>().level == 4) {
-            transform.Find("Level Up button").gameObject.SetActive(false);
+            if (transform.Find("Level Up button") != null)
+            {
+                transform.Find("Level Up button").gameObject.SetActive(false);
+            }
         }
         transform.position = Camera.main.WorldToScreenPoint(activeTower.transform.position);
         transform.localScale = new Vector3(0,0,0);
@@ -118,7 +121,9 @@ public class TowerRadialMenuScript : MonoBehaviour {
         if (gameData.usac > HigherLevelTower.GetComponentInChildren<TowerShootsScript>().cost)
         {
             gameData.ChangeUsac(-HigherLevelTower.GetComponentInChildren<TowerShootsScript>().cost);
-            Instantiate(HigherLevelTower, activeTower.transform.position, Quaternion.identity);
+            GameObject newTower = Instantiate(HigherLevelTower, activeTower.transform.position, Quaternion.identity);
+            newTower.transform.Find("Tower sprite").GetComponent<SpriteRenderer>().sortingOrder = activeTower.transform.Find("Tower sprite").GetComponent<SpriteRenderer>().sortingOrder;
+            Debug.Log(activeTower.transform.Find("Tower sprite").GetComponent<SpriteRenderer>().sortingOrder.ToString());
 
             Destroy(activeTower);
             DeactivateRadialMenu();

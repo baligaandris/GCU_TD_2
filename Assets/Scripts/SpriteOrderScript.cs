@@ -20,6 +20,7 @@ public class SpriteOrderScript : MonoBehaviour {
         {
             collider.GetComponentInChildren<SpriteRenderer>().sortingOrder -= 2;
             collider.GetComponentInChildren<Canvas>().sortingOrder -= 2;
+
         }
     }
 }
