@@ -109,6 +109,13 @@ public class EnemyNavScript : MonoBehaviour
             }
         }
         targetToMoveTo = closestExitPoint.transform.position;
+        if (targetToMoveTo.x < transform.position.x)
+        {
+            ChangeAnimationDirection(WaypointScript.direction.left);
+        }
+        else {
+            ChangeAnimationDirection(WaypointScript.direction.right);
+        }
     }
 
     public void SlowMeDown(float slowBy, float slowDuration)
