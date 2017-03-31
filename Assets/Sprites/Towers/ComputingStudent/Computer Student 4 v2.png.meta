@@ -1,80 +1,34 @@
 fileFormatVersion: 2
-guid: a9d135dbb440f4a41b8fa2969e548936
-timeCreated: 1490976814
+guid: b946008fe4ad9d943857c779049e5f43
+timeCreated: 1490978618
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Computer Student 4_0
-    21300002: Computer Student 4_1
-    21300004: Computer Student 4_2
-    21300006: Computer Student 4_3
-    21300008: Computer Student 4_4
-    21300010: Computer Student 4_5
-    21300012: Computer Student 4_6
-    21300014: Computer Student 4_7
-    21300016: Computer Student 4_8
-    21300018: Computer Student 4_9
-    21300020: Computer Student 4_10
-    21300022: Computer Student 4_11
-    21300024: Computer Student 4_12
-    21300026: Computer Student 4_13
-    21300028: Computer Student 4_14
-    21300030: Computer Student 4_15
-    21300032: Computer Student 4_16
-    21300034: Computer Student 4_17
-    21300036: Computer Student 4_18
-    21300038: Computer Student 4_19
-    21300040: Computer Student 4_20
-    21300042: Computer Student 4_21
-    21300044: Computer Student 4_22
-    21300046: Computer Student 4_23
-    21300048: Computer Student 4_24
-    21300050: Computer Student 4_25
-    21300052: Computer Student 4_26
-    21300054: Computer Student 4_27
-    21300056: Computer Student 4_28
-    21300058: Computer Student 4_29
-    21300060: Computer Student 4_30
-    21300062: Computer Student 4_31
-    21300064: Computer Student 4_32
-    21300066: Computer Student 4_33
-    21300068: Computer Student 4_34
-    21300070: Computer Student 4_35
-    21300072: Computer Student 4_36
-    21300074: Computer Student 4_37
-    21300076: Computer Student 4_38
-    21300078: Computer Student 4_39
-    21300080: Computer Student 4_40
-    21300082: Computer Student 4_41
-    21300084: Computer Student 4_42
-    21300086: Computer Student 4_43
-    21300088: Computer Student 4_44
-    21300090: Computer Student 4_45
-    21300092: Computer Student 4_46
-    21300094: Computer Student 4_47
-    21300096: Computer Student 4_48
-    21300098: Computer Student 4_49
-    21300100: Computer Student 4_50
-    21300102: Computer Student 4_51
-    21300104: Computer Student 4_52
-    21300106: Computer Student 4_53
-    21300108: Computer Student 4_54
-    21300110: Computer Student 4_55
-    21300112: Computer Student 4_56
-    21300114: Computer Student 4_57
-    21300116: Computer Student 4_58
-    21300118: Computer Student 4_59
-    21300120: Computer Student 4_60
-    21300122: Computer Student 4_61
-    21300124: Computer Student 4_62
-    21300126: Computer Student 4_63
-    21300128: Computer Student 4_64
-    21300130: Computer Student 4_65
-    21300132: Computer Student 4_66
-    21300134: Computer Student 4_67
-    21300136: Computer Student 4_68
-    21300138: Computer Student 4_69
-    21300140: Computer Student 4_70
+    21300000: Computer Student 4 v2_0
+    21300002: Computer Student 4 v2_1
+    21300004: Computer Student 4 v2_2
+    21300006: Computer Student 4 v2_3
+    21300008: Computer Student 4 v2_4
+    21300010: Computer Student 4 v2_5
+    21300012: Computer Student 4 v2_6
+    21300014: Computer Student 4 v2_7
+    21300016: Computer Student 4 v2_8
+    21300018: Computer Student 4 v2_9
+    21300020: Computer Student 4 v2_10
+    21300022: Computer Student 4 v2_11
+    21300024: Computer Student 4 v2_12
+    21300026: Computer Student 4 v2_13
+    21300028: Computer Student 4 v2_14
+    21300030: Computer Student 4 v2_15
+    21300032: Computer Student 4 v2_16
+    21300034: Computer Student 4 v2_17
+    21300036: Computer Student 4 v2_18
+    21300038: Computer Student 4 v2_19
+    21300040: Computer Student 4 v2_20
+    21300042: Computer Student 4 v2_21
+    21300044: Computer Student 4 v2_22
+    21300046: Computer Student 4 v2_23
+    21300048: Computer Student 4 v2_24
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -157,327 +111,327 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Computer Student 4_0
+      name: Computer Student 4 v2_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 2063
-        width: 380
-        height: 800
+        x: 96
+        y: 3349
+        width: 264
+        height: 651
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Computer Student 4_1
+      name: Computer Student 4 v2_1
       rect:
         serializedVersion: 2
-        x: 380
-        y: 2063
-        width: 380
-        height: 800
+        x: 453
+        y: 3349
+        width: 262
+        height: 651
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Computer Student 4_2
+      name: Computer Student 4 v2_2
       rect:
         serializedVersion: 2
-        x: 760
-        y: 2063
-        width: 380
-        height: 800
+        x: 808
+        y: 3349
+        width: 264
+        height: 651
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Computer Student 4_3
+      name: Computer Student 4 v2_3
       rect:
         serializedVersion: 2
-        x: 1140
-        y: 2063
-        width: 380
-        height: 800
+        x: 1165
+        y: 3349
+        width: 262
+        height: 651
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Computer Student 4_4
+      name: Computer Student 4 v2_4
       rect:
         serializedVersion: 2
         x: 1520
-        y: 2063
-        width: 380
-        height: 800
+        y: 3359
+        width: 263
+        height: 641
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Computer Student 4_5
+      name: Computer Student 4 v2_5
       rect:
         serializedVersion: 2
-        x: 1900
-        y: 2063
-        width: 380
-        height: 800
+        x: 1877
+        y: 3359
+        width: 262
+        height: 641
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Computer Student 4_6
+      name: Computer Student 4 v2_6
       rect:
         serializedVersion: 2
-        x: 2280
-        y: 2063
-        width: 380
-        height: 800
+        x: 2232
+        y: 3359
+        width: 263
+        height: 641
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Computer Student 4_7
+      name: Computer Student 4 v2_7
       rect:
         serializedVersion: 2
-        x: 2660
-        y: 2063
-        width: 380
-        height: 800
+        x: 2589
+        y: 3359
+        width: 262
+        height: 641
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Computer Student 4_8
+      name: Computer Student 4 v2_8
       rect:
         serializedVersion: 2
-        x: 3040
-        y: 2063
-        width: 380
-        height: 800
+        x: 2944
+        y: 3359
+        width: 263
+        height: 641
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Computer Student 4_9
+      name: Computer Student 4 v2_9
       rect:
         serializedVersion: 2
-        x: 3420
-        y: 2063
-        width: 380
-        height: 800
+        x: 3301
+        y: 3349
+        width: 262
+        height: 651
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Computer Student 4_10
+      name: Computer Student 4 v2_10
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1263
-        width: 380
-        height: 800
+        x: 3656
+        y: 3349
+        width: 264
+        height: 651
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Computer Student 4_11
+      name: Computer Student 4 v2_11
       rect:
         serializedVersion: 2
-        x: 380
-        y: 1263
-        width: 380
-        height: 800
+        x: 96
+        y: 2603
+        width: 264
+        height: 650
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Computer Student 4_12
+      name: Computer Student 4 v2_12
       rect:
         serializedVersion: 2
-        x: 760
-        y: 1263
-        width: 380
-        height: 800
+        x: 453
+        y: 2603
+        width: 262
+        height: 653
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Computer Student 4_13
+      name: Computer Student 4 v2_13
       rect:
         serializedVersion: 2
-        x: 1140
-        y: 1263
-        width: 380
-        height: 800
+        x: 808
+        y: 2603
+        width: 264
+        height: 650
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Computer Student 4_14
+      name: Computer Student 4 v2_14
+      rect:
+        serializedVersion: 2
+        x: 1165
+        y: 2613
+        width: 262
+        height: 643
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Computer Student 4 v2_15
       rect:
         serializedVersion: 2
         x: 1520
-        y: 1263
-        width: 380
-        height: 800
+        y: 2613
+        width: 264
+        height: 640
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Computer Student 4_15
+      name: Computer Student 4 v2_16
       rect:
         serializedVersion: 2
-        x: 1900
-        y: 1263
-        width: 380
-        height: 800
+        x: 1877
+        y: 2613
+        width: 262
+        height: 643
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Computer Student 4_16
+      name: Computer Student 4 v2_17
       rect:
         serializedVersion: 2
-        x: 2280
-        y: 1263
-        width: 380
-        height: 800
+        x: 2232
+        y: 2613
+        width: 264
+        height: 640
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Computer Student 4_17
+      name: Computer Student 4 v2_18
       rect:
         serializedVersion: 2
-        x: 2660
-        y: 1263
-        width: 380
-        height: 800
+        x: 2589
+        y: 2613
+        width: 262
+        height: 643
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Computer Student 4_18
+      name: Computer Student 4 v2_19
       rect:
         serializedVersion: 2
-        x: 3040
-        y: 1263
-        width: 380
-        height: 800
+        x: 2944
+        y: 2613
+        width: 264
+        height: 640
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Computer Student 4_19
+      name: Computer Student 4 v2_20
       rect:
         serializedVersion: 2
-        x: 3420
-        y: 1263
-        width: 380
-        height: 800
+        x: 3301
+        y: 2613
+        width: 262
+        height: 643
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Computer Student 4_20
+      name: Computer Student 4 v2_21
       rect:
         serializedVersion: 2
-        x: 3
-        y: 442
-        width: 380
-        height: 800
+        x: 3656
+        y: 2613
+        width: 264
+        height: 640
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Computer Student 4_21
+      name: Computer Student 4 v2_22
       rect:
         serializedVersion: 2
-        x: 384
-        y: 443
-        width: 380
-        height: 800
+        x: 96
+        y: 1867
+        width: 264
+        height: 640
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Computer Student 4_22
+      name: Computer Student 4 v2_23
       rect:
         serializedVersion: 2
-        x: 763
-        y: 443
-        width: 380
-        height: 800
+        x: 453
+        y: 1867
+        width: 262
+        height: 640
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Computer Student 4_23
+      name: Computer Student 4 v2_24
       rect:
         serializedVersion: 2
-        x: 1143
-        y: 443
-        width: 380
-        height: 800
+        x: 808
+        y: 1867
+        width: 264
+        height: 640
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Computer Student 4_24
-      rect:
-        serializedVersion: 2
-        x: 1523
-        y: 443
-        width: 380
-        height: 800
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
