@@ -8,6 +8,10 @@ public class NewTutorialCanvasScript : MonoBehaviour {
 	public GameObject continueButton1;
 	public GameObject continueButton2;
 	public GameObject speakingStudent;
+	public GameObject towerPlacement;
+	public GameObject towerPlacement2;
+	public GameObject towerPlacement3;
+
 
 	// Use this for initialization
 	void Start () {
@@ -42,7 +46,7 @@ public class NewTutorialCanvasScript : MonoBehaviour {
         }
     }
 
-	public void SecondContinueButtonClicl(){
+	public void SecondContinueButtonClick(){
 		if (continueButton2.activeInHierarchy && gifAnimation.activeInHierarchy) {
 			gifAnimation.SetActive (false);
 			continueButton2.SetActive (false);
@@ -52,4 +56,32 @@ public class NewTutorialCanvasScript : MonoBehaviour {
 		}
 	}
 
+	public void SpecialButtonClick1(){
+		if (continueButton2.activeInHierarchy && gifAnimation.activeInHierarchy) {
+		gifAnimation.SetActive (false);
+		continueButton2.SetActive (false);
+		gameObject.GetComponent<AudioSource> ().Play ();
+		speakingStudent.SetActive (false);
+			towerPlacement.SetActive (true);
+		}
+	}
+	public void SpecialButtonClick2(){
+		if (continueButton2.activeInHierarchy && gifAnimation.activeInHierarchy) {
+			gifAnimation.SetActive (false);
+			continueButton2.SetActive (false);
+			gameObject.GetComponent<AudioSource> ().Play ();
+			speakingStudent.SetActive (false);
+			towerPlacement2.SetActive (true);
+			}
+	}
+
+	public void SpecialButtonClick3(){
+		if (continueButton2.activeInHierarchy && gifAnimation.activeInHierarchy) {
+			gifAnimation.SetActive (false);
+			continueButton2.SetActive (false);
+			gameObject.GetComponent<AudioSource> ().Play ();
+			speakingStudent.SetActive (false);
+			towerPlacement3.SetActive (true);
+		}
+	}
 }
