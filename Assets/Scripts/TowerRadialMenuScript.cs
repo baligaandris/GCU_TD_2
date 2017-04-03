@@ -28,6 +28,9 @@ public class TowerRadialMenuScript : MonoBehaviour {
     public GameObject sportsInfo;
     public GameObject artInfo;
 
+    public Text priceText;
+ 
+
     // Use this for initialization
     void Start () {
         gameData = GameObject.FindWithTag("GameData").GetComponent<GameDataScript>();
@@ -79,7 +82,12 @@ public class TowerRadialMenuScript : MonoBehaviour {
             }
         }
         transform.position = Camera.main.WorldToScreenPoint(activeTower.transform.position);
+        if (priceText != null) {
+            priceText.GetComponent<Text>().text = "£" + activeTower.GetComponentInChildren<TowerShootsScript>().nextLevelTower.GetComponentInChildren<TowerShootsScript>().cost.ToString();
+        }
+        
         transform.localScale = new Vector3(0,0,0);
+
     }
 
     public void DeactivateRadialMenu() {
