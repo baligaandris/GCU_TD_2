@@ -82,7 +82,7 @@ public class TowerRadialMenuScript : MonoBehaviour {
             }
         }
         transform.position = Camera.main.WorldToScreenPoint(activeTower.transform.position);
-        if (priceText != null) {
+        if (priceText != null && activeTower.GetComponentInChildren<TowerShootsScript>().nextLevelTower!=null) {
             priceText.GetComponent<Text>().text = "£" + activeTower.GetComponentInChildren<TowerShootsScript>().nextLevelTower.GetComponentInChildren<TowerShootsScript>().cost.ToString();
         }
         
@@ -126,7 +126,7 @@ public class TowerRadialMenuScript : MonoBehaviour {
     }
 
     private void UpgradeTo(GameObject HigherLevelTower) {
-        if (gameData.usac > HigherLevelTower.GetComponentInChildren<TowerShootsScript>().cost)
+        if (gameData.usac >= HigherLevelTower.GetComponentInChildren<TowerShootsScript>().cost)
         {
             gameData.ChangeUsac(-HigherLevelTower.GetComponentInChildren<TowerShootsScript>().cost);
             GameObject newTower = Instantiate(HigherLevelTower, activeTower.transform.position, Quaternion.identity);
